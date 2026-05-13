@@ -29,3 +29,7 @@ while(1){
 }
 
 main();
+
+//warning: in the working copy of 'worker/package.json', LF will be replaced by CRLF the next time Git touches it
+// This warning actually is about the Line feed which means in the windows git is storing my files in repo as LF (line feed "\n")
+// but it will converth it later into CRLF (Carriage Return + Line feed "\r \n")
