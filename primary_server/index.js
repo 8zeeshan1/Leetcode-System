@@ -3,11 +3,13 @@ const {createClient} = require("redis")
 //const {kafka} = require("./kafka/client")
 
 const app = express()
-const PORT = 3000
+const PORT = 8000
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-const client = createClient();
+const client = createClient({
+    url: "redis://redis:6379"
+});
 client.connect();
 
 app.post("/submit", (req, res)=>{
