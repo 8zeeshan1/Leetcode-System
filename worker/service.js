@@ -1,6 +1,5 @@
 const {createClient} = require("redis");
-const kafka = require("../primary_server/kafka/client");
-
+const kafka = require("./kafka/client");
 const client = createClient();
 const producer = kafka.producer();
 console.log("Producer connecting...");

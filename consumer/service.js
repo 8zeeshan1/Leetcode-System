@@ -1,4 +1,4 @@
-const kafka = require("../primary_server/kafka/client");
+const kafka = require("./kafka/client");
 
 async function run() {
   const consumer = await kafka.consumer({
