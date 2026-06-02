@@ -1,6 +1,6 @@
 const express = require("express")
 const {createClient} = require("redis")
-const {kafka} = require("./kafka/client")
+//const {kafka} = require("./kafka/client")
 
 const app = express()
 const PORT = 3000
